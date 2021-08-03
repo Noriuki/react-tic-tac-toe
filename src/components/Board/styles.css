@@ -1,0 +1,38 @@
+.board-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.board-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.board-header h3 {
+  color: #6b6b6b;
+  font-size: 2rem;
+  margin: 0;
+}
+.board-header h3>span {
+  margin: 0 0.5rem;
+}
+.board-header h3:first-of-type span {
+  color: #14bdac;
+}
+.board-header h3:last-of-type span {
+  color: #00cee9;
+}
+
+.board-container > button {
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+.board-container > button:hover {
+  border: 1px solid #f2f2f2;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
